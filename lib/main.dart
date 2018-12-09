@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 
-import 'edit_image.dart';
+import 'package:triplels_photo_editor/editor.dart';
 
 void main() => runApp(new MyApp());
 
@@ -44,7 +44,7 @@ class HomePage extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => EditImagePage(title: 'Edit image', image: image),
+                builder: (context) => EditorPage(image: image),
               ),
             );
           }
